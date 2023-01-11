@@ -12,25 +12,32 @@
          body{position:relative;max-width:1200px;min-width:800px;margin:auto;background:#1e1e1c;font-size:18px;line-height:24px;height:100%}
          header{text-align:center;background-color: blue;color:white}
          h1{font-size:48px;margin:0;padding:45px 0 20px 0;border:0;font-weight:300;}
-         h2{font-size:26px;margin:0;padding:10px 0 35px 0;border:0;font-weight:300;}
+         h2{font-size:24px;margin:0;padding:10px 0 35px 0;border:0;font-weight:300;}
          ul{margin-bottom: 0px;}
          svg{width:24px;height:24px;vertical-align: bottom;color:grey;padding-left:10px}
          a{text-decoration:none;color:#00008B}
          a:hover{text-decoration:underline}
          .row {display: flex;background-color: white}
-         .col-1 {flex: .22;text-align:right;padding: 0 2.5% 0 .5%;background-color:#F0F0F0;color:black}
+         .col-1 {flex: .23;text-align:right;padding: 0 2.5% 0 .5%;background-color:#F0F0F0;color:black}
          .col-2 {flex: .78;text-align:left; padding: 0 2.5% 0 2.5%;background-color:white ;color:black}
          .section{padding:25px 0 0 0}
-         .section-title{font-size: 22px;font-weight: 600;}
-         .position-title, .project-title{font-size: 22px;font-weight: 600;color:grey}
+         .section-title{font-size: 18px;font-weight: 600;}
+         .position-title, .project-title{font-size: 20px;font-weight: 600;color:grey}
          .company-name{font-weight: bold;}
          .skill-group{font-size: 18px;font-weight:600;color:grey}
+
+         @media print {
+            body{margin:0px;padding-top:0;}
+            h1{font-weight:800;padding:15px 0 20px 0;color:black;}
+            h2{padding:10px 0 15px 0;color:black;}
+            svg{display:none;}
+         }
       </style>
    </head>
    <body>
       <header>
          <h1>LARS ESTREM</h1>
-         <h2>Digital marketing expert focusing on SEO and pay-per-click advertising</h2>   
+         <h2>Digital marketing strategist focusing on SEO and pay-per-click advertising</h2>   
       </header>
       <div class="row">
          <!-- Column Left -->
@@ -79,18 +86,17 @@
             
             <div class="section">
                <div class="section-title">SKILLS</div>
-               <div class="skill-group">Tracking &amp; Productivity</div>
+               <div class="skill-group">Productivity</div>
                <div class="details">
                   <a href="https://www.semrush.com/">SEMRUSH</a><br>
                   <a href="https://www.conductor.com/">Conductor Searchlight</a> <br>
                   <a href="https://www.screamingfrog.co.uk/seo-spider/">Screaming Frog</a> <br>
                   <a href="https://datastudio.google.com/">Google Data Studios</a><br>
                   <a href="https://analytics.withgoogle.com/">Google Analytics</a> <br>
-                  <a href="https://search.google.com/search-console/about">Google Search Console</a> <br>
+                  <a href="https://search.google.com/search-console/about">Search Console</a> <br>
                   <a href="https://www.bing.com/webmasters/about">Bing Webmaster Tools</a> <br>
                   <a href="https://developers.google.com/speed/pagespeed/insights/">Pagespeed Insights</a> <br>
-                  <a href="https://www.microsoft.com/en-us/microsoft-365/excel">Microsoft Excel</a><br>
-                  <a href="https://workspace.google.com/">Google Workspace</a><br>
+                  Microsoft Office<br>
                   <a href="https://www.basecamp.com/">Basecamp</a> <br>
                   <a href="https://asana.com/">Asana</a> <br>
                </div>
@@ -104,8 +110,6 @@
                   CSS <br>
                   PHP <br>
                   ASP.Net <br>
-                  Jekyll <br>
-                  Hugo <br>
                   SQL <br>
                </div>
             </div>
@@ -185,7 +189,7 @@
                   <li>Maintain a high level of physical fitness required for the demands of the job.</li>
                </ul>
             </div>
-            <div class="section" style="height:865px"> <!-- height needed to print full screen with two colums -->
+            <div class="section" style="height:300px"> <!-- height needed to print full screen with two colums -->
                <div class="position-title">Visual Basic &amp; Systems Analysis Instructor</div>
                <a class="company-name">Information Technology Institute</a> (a post graduate tech school) <br>
                2-2000 - 5-2001 <br>
